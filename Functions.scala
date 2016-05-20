@@ -21,5 +21,18 @@ object Functions{
 		getS
 		println("sum of array : " + getSumArray(1,2,3,4,5,6))
 
+
+		def times3(num : Int) : Int = num * 3
+
+		println(times3(3))
+
+		def funcDemo(func : (Int) => Int, num : Int) : Int = func(num)
+
+		println(funcDemo(times3, 10))
+
+		var divisorVal = 3
+		var divisor = (num : Double) => num / divisorVal
+
+		println(divisor(5.0)) 
 	}
 }
